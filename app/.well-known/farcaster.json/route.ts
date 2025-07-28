@@ -1,22 +1,29 @@
 import { NextResponse } from "next/server";
-import { APP_URL } from "../../../lib/constants";
 
 export async function GET() {
+  // Use process.env to get your public URL
+  const appUrl = (
+    process.env.NEXT_PUBLIC_URL ?? "https://based-meme.vercel.app"
+  )
+    .trim()
+    .replace(/\/+$/, "");
+
   const farcasterConfig = {
-    // TODO: Add your own account association
     frame: {
       version: "1",
-      name: "Monad Farcaster MiniApp Template",
-      iconUrl: `${APP_URL}/images/icon.png`,
-      homeUrl: `${APP_URL}`,
-      imageUrl: `${APP_URL}/images/feed.png`,
+      name: "Based Meme MiniApp",
+      iconUrl: `${appUrl}/images/icon.png`,
+      homeUrl: `${appUrl}/`,
+      imageUrl: `${appUrl}/images/feed.png`,
       screenshotUrls: [],
       tags: ["monad", "farcaster", "miniapp", "template"],
       primaryCategory: "developer-tools",
       buttonTitle: "Launch Template",
-      splashImageUrl: `${APP_URL}/images/splash.png`,
+      splashImageUrl: `${appUrl}/images/splash.png`,
       splashBackgroundColor: "#ffffff",
-      webhookUrl: `${APP_URL}/api/webhook`,
+      // You can add webhookUrl if you actually use webhooks; otherwise, remove it.
+      // Uncomment below if needed:
+      // webhookUrl: `${appUrl}/api/webhook`
     },
   };
 
