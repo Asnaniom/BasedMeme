@@ -1,24 +1,27 @@
 import { NextResponse } from "next/server";
 
-// Use your production Vercel URL for all image and home URLs
-const appUrl = "https://based-meme.vercel.app";
-
 export async function GET() {
-  const farcasterConfig = {
+  return NextResponse.json({
     frame: {
+      name: "Based Meme",
       version: "1",
-      name: "Based Meme MiniApp",
-      iconUrl: `${appUrl}/images/icon.png`,
-      homeUrl: `${appUrl}/`,
-      imageUrl: `${appUrl}/images/feed.png`,
-      screenshotUrls: [],
-      tags: ["monad", "farcaster", "miniapp", "template"],
-      primaryCategory: "Memes", // Use "Memes" if possible; otherwise "developer-tools"
-      buttonTitle: "Launch Template",
-      splashImageUrl: `${appUrl}/images/splash.png`,
-      splashBackgroundColor: "#ffffff",
+      iconUrl: "https://based-meme.vercel.app/icon.png",
+      homeUrl: "https://based-meme.vercel.app",
+      imageUrl: "https://based-meme.vercel.app/image.png",
+      splashImageUrl: "https://based-meme.vercel.app/splash.png",
+      splashBackgroundColor: "#6200EA",
+      webhookUrl: "https://based-meme.vercel.app/api/webhook",
+      subtitle: "Have Fun In Farcaster",
+      description: "De-Generate Memes ",
+      primaryCategory: "social",
+      tags: ["memes", "degen", "meme"],
     },
-  };
-
-  return NextResponse.json(farcasterConfig);
+    accountAssociation: {
+      header:
+        "eyJmaWQiOjI3NzA1MSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDhjNzU4NjllYzZBN0ZCZkQ1NUY4NTFENEU0YTUwQTA0MDdhNDVhMkMifQ",
+      payload: "eyJkb21haW4iOiJiYXNlZC1tZW1lLnZlcmNlbC5hcHAifQ",
+      signature:
+        "MHg1MThjZTBhYWY1MTg0ZWYwZTM3YzQ5ZWUwNTRmOGFkM2UzYzdmNjEzMDY0NmRkZDhjMTViMThlOTE3YTUzZTdkMjdhYTNkMTgyYzY3NTkxOWI3ZTYyZTA2YmE0NGI4ODNhOTM0N2I1MWQ3ZGUxMmU4MTJmMzU5ZThlOGVjY2FmMDFj",
+    },
+  });
 }
