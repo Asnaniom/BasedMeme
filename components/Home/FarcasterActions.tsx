@@ -1,13 +1,15 @@
-import { useFrame } from '@/components/farcaster-provider'
-import { APP_URL } from '@/lib/constants'
-import { useMutation } from '@tanstack/react-query'
+import { useFrame } from "@/components/farcaster-provider";
 
-export function FarcasterActions() {
-  const { actions } = useFrame()
+// Accept memeImageUrl as a prop, from meme data or state.
+export function FarcasterActions({ memeImageUrl }) {
+  const { actions } = useFrame();
+  const proxyUrl = memeImageUrl
+    ? `/api/proxy-image?url=${encodeURIComponent(memeImageUrl)}`
+    : "";
 
   return (
     <div className="space-y-4 border border-[#333] rounded-md p-4">
-      <h2 className="text-xl font-bold text-left">sdk.actions</h2>
+      <div className="text-xl font-bold text-left">sdk.actions</div>
       <div className="flex flex-row space-x-4 justify-start items-start">
         {actions ? (
           <div className="flex flex-col space-y-4 justify-start">
@@ -30,41 +32,30 @@ export function FarcasterActions() {
               className="bg-white text-black rounded-md p-2 text-sm"
               onClick={() =>
                 actions?.composeCast({
-                  text: 'Check out this Monad Farcaster MiniApp Template!',
-                  embeds: [`${APP_URL}`],
+                  text: "Check out this meme!",
+                  embeds: [{ url: proxyUrl }],
                 })
               }
+              disabled={!proxyUrl}
             >
-              composeCast
+              Cast Meme via Proxy
             </button>
-            <button
-              type="button"
-              className="bg-white text-black rounded-md p-2 text-sm"
-              onClick={() => actions?.openUrl('https://docs.monad.xyz')}
-            >
-              openUrl
-            </button>
-            <button
-              type="button"
-              className="bg-white text-black rounded-md p-2 text-sm"
-              onClick={() =>
-                actions?.signIn({ nonce: '1201', acceptAuthAddress: true })
-              }
-            >
-              signIn
-            </button>
-            <button
-              type="button"
-              className="bg-white text-black rounded-md p-2 text-sm"
-              onClick={() => actions?.viewProfile({ fid: 17979 })}
-            >
-              viewProfile
-            </button>
+            <a href={memeImageUrl} download style={{ marginLeft: 8 }}>
+              <button
+                type="button"
+                className="bg-gray-100 text-black rounded-md p-2 text-sm mt-2"
+              >
+                Download Meme
+              </button>
+            </a>
+            <div style={{ fontSize: 12, color: "#888" }}>
+              If meme isn't shown, try downloading and uploading manually.
+            </div>
           </div>
         ) : (
-          <p className="text-sm text-left">Actions not available</p>
+          <div className="text-sm text-left">Actions not available</div>
         )}
       </div>
     </div>
-  )
+  );
 }
