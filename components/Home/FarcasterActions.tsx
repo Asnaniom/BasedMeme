@@ -23,13 +23,6 @@ export function FarcasterActions({ memeImageUrl }: { memeImageUrl: string }) {
             <button
               type="button"
               className="bg-white text-black rounded-md p-2 text-sm"
-              onClick={() => actions?.close()}
-            >
-              close
-            </button>
-            <button
-              type="button"
-              className="bg-white text-black rounded-md p-2 text-sm"
               onClick={() =>
                 actions?.composeCast({
                   text: "Check out this meme!",
@@ -40,17 +33,6 @@ export function FarcasterActions({ memeImageUrl }: { memeImageUrl: string }) {
             >
               Cast Meme via Proxy
             </button>
-            <a href={memeImageUrl} download style={{ marginLeft: 8 }}>
-              <button
-                type="button"
-                className="bg-gray-100 text-black rounded-md p-2 text-sm mt-2"
-              >
-                Download Meme
-              </button>
-            </a>
-            <div style={{ fontSize: 12, color: "#888" }}>
-              If meme isn't shown, try downloading and uploading manually.
-            </div>
           </div>
         ) : (
           <div className="text-sm text-left">Actions not available</div>
