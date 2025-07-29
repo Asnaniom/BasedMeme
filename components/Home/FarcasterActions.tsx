@@ -1,7 +1,7 @@
 import { useFrame } from "@/components/farcaster-provider";
 
 // Accept memeImageUrl as a prop, from meme data or state.
-export function FarcasterActions({ memeImageUrl }) {
+export function FarcasterActions({ memeImageUrl }: { memeImageUrl: string }) {
   const { actions } = useFrame();
   const proxyUrl = memeImageUrl
     ? `/api/proxy-image?url=${encodeURIComponent(memeImageUrl)}`
