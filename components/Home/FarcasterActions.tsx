@@ -26,7 +26,7 @@ export function FarcasterActions({ memeImageUrl }: { memeImageUrl: string }) {
               onClick={() =>
                 actions?.composeCast({
                   text: "Check out this meme!",
-                  embeds: [{ url: proxyUrl }],
+                  embeds: [proxyUrl],
                 })
               }
               disabled={!proxyUrl}
