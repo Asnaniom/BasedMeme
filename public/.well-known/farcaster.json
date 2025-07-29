@@ -1,9 +1,4 @@
 {
-  "accountAssociation": {
-    "header": "eyJmaWQiOjI3NzA1MSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDhjNzU4NjllYzZBN0ZCZkQ1NUY4NTFENEU0YTUwQTA0MDdhNDVhMkMifQ",
-    "payload": "eyJkb21haW4iOiJiYXNlZC1tZW1lLnZlcmNlbC5hcHAifQ",
-    "signature": "MHg1MThjZTBhYWY1MTg0ZWYwZTM3YzQ5ZWUwNTRmOGFkM2UzYzdmNjEzMDY0NmRkZDhjMTViMThlOTE3YTUzZTdkMjdhYTNkMTgyYzY3NTkxOWI3ZTYyZTA2YmE0NGI4ODNhOTM0N2I1MWQ3ZGUxMmU4MTJmMzU5ZThlOGVjY2FmMDFj"
-  },
   "miniapp": {
     "name": "Based Meme",
     "version": "1",
@@ -13,9 +8,11 @@
     "splashImageUrl": "https://based-meme.vercel.app/splash.png",
     "splashBackgroundColor": "#6200EA",
     "webhookUrl": "https://based-meme.vercel.app/api/webhook",
-    "subtitle": "Have Fun In Farcaster",
-    "description": "De-Generate Memes ",
+    "subtitle": "Create, share, and remix onchain memes",
+    "description": "Based Meme is the ultimate meme playground on Farcaster. Instantly generate, remix, and share memes powered by Base and the Farcaster network. Play with friends, go full degen, and fuel the viral energy of the decentralized meme economy!",
     "primaryCategory": "social",
-    "tags": ["memes", "degen", "meme"]
+    "tags": ["meme", "memes", "social", "fun", "onchain"],
+    "screenshotUrls": ["https://based-meme.vercel.app/feed.png"],
+    "heroImageUrl": "https://based-meme.vercel.app/image.png"
   }
 }
