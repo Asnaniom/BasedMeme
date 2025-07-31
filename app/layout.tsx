@@ -27,7 +27,8 @@ export default function RootLayout({
           padding: 0,
           boxSizing: "border-box",
           background: "#6200EA", // Background purple
-          overflow: "hidden",
+          // Enable normal scrolling
+          overflow: "auto",
           minHeight: "100vh",
         }}
       >
@@ -41,7 +42,7 @@ export default function RootLayout({
             border: "8px solid #6200EA", // <-- THE BORDER (adjust width here)
             borderRadius: "18px", // <-- optional: for rounded corners (adjust as needed)
             background: "#fff", // Or your inner background color
-            overflow: "hidden",
+            // overflow removed here!
             display: "flex",
             flexDirection: "column",
             justifyContent: "stretch",
