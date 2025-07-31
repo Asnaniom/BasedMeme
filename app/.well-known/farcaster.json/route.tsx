@@ -13,16 +13,15 @@ export async function GET() {
       buttonTitle: "👀 Explore Memes",
       splashImageUrl: "https://based-meme.vercel.app/opengraph-image.png",
       splashBackgroundColor: "#6200EA",
-      description: "Create, remix & share memes powered by Farcaster and Base", // Clear and consistent description
-      subtitle: "The ultimate meme playground on Base",
+      description: "Create, remix and share memes on farcaster", // Clear and consistent description
+      subtitle: "Your meme playground on Base",
       screenshotUrls: ["https://based-meme.vercel.app/opengraph-image.png"],
       primaryCategory: "social",
       tags: ["meme", "memes", "fun", "onchain", "base"],
       heroImageUrl: "https://based-meme.vercel.app/opengraph-image.png",
-      tagline: "The ultimate meme playground on Base",
+      tagline: "Your meme playground on Base",
       ogTitle: "Based Meme - Meme Playground",
-      ogDescription:
-        "Create, remix & share memes powered by Farcaster and Base",
+      ogDescription: "Create and share memes on farcaster",
       ogImageUrl: "https://based-meme.vercel.app/opengraph-image.png",
     },
     accountAssociation: {
