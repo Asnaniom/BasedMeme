@@ -2,14 +2,14 @@
   "frame": {
     "name": "Based Memes",
     "tags": ["meme", "memes"],
-    "homeUrl": "https://based-meme.vercel.app",
-    "iconUrl": "https://based-meme.vercel.app/icon.png",
+    "homeUrl": "https://based-meme.vercel.app/opengraph-image.png",
+    "iconUrl": "https://based-meme.vercel.app/generated-image.png",
     "version": "1",
-    "imageUrl": "https://based-meme.vercel.app/image.png",
+    "imageUrl": "https://based-meme.vercel.app/opengraph-image.png",
     "subtitle": "One More Reason To Be Based",
     "webhookUrl": "https://based-meme.vercel.app/api/webhook",
     "description": "Have Fun On Farcaster",
-    "splashImageUrl": "https://based-meme.vercel.app/splash.png",
+    "splashImageUrl": "https://based-meme.vercel.app/opengraph-image.png",
     "primaryCategory": "social",
     "splashBackgroundColor": "#6200EA"
   },

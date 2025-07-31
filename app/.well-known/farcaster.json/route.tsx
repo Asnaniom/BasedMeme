@@ -8,7 +8,7 @@ export async function GET() {
       version: "1",
       name: "Based Meme", // Updated from "Based Memes" for consistency
       iconUrl: "https://based-meme.vercel.app/favicon.ico",
-      homeUrl: "https://based-meme.vercel.app",
+      homeUrl: "https://based-meme.vercel.app/opengraph-image.png",
       imageUrl: "https://based-meme.vercel.app/opengraph-image.png",
       buttonTitle: "👀 Explore Memes",
       splashImageUrl: "https://based-meme.vercel.app/opengraph-image.png",
@@ -18,7 +18,7 @@ export async function GET() {
       screenshotUrls: ["https://based-meme.vercel.app/opengraph-image.png"],
       primaryCategory: "social",
       tags: ["meme", "memes", "fun", "onchain", "base"],
-      heroImageUrl: "https://based-meme.vercel.app/opengraph-image.png",
+      heroImageUrl: "https://based-meme.vercel.app/generated-image.png",
       tagline: "Your meme playground on Base",
       ogTitle: "Based Meme - Meme Playground",
       ogDescription: "Create and share memes on farcaster",
