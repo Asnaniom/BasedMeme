@@ -25,9 +25,11 @@ export async function GET() {
       ogImageUrl: "https://based-meme.vercel.app/opengraph-image.png",
     },
     accountAssociation: {
-      header: "",
-      payload: "",
-      signature: "",
+      header:
+        "eyJmaWQiOjI3NzA1MSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDhjNzU4NjllYzZBN0ZCZkQ1NUY4NTFENEU0YTUwQTA0MDdhNDVhMkMifQ",
+      payload: "eyJkb21haW4iOiJiYXNlZC1tZW1lLnZlcmNlbC5hcHAifQ",
+      signature:
+        "MHg1MThjZTBhYWY1MTg0ZWYwZTM3YzQ5ZWUwNTRmOGFkM2UzYzdmNjEzMDY0NmRkZDhjMTViMThlOTE3YTUzZTdkMjdhYTNkMTgyYzY3NTkxOWI3ZTYyZTA2YmE0NGI4ODNhOTM0N2I1MWQ3ZGUxMmU4MTJmMzU5ZThlOGVjY2FmMDFj",
     },
   };
 
