@@ -1,12 +1,12 @@
-'use client'
-import { FarcasterActions } from '@/components/Home/FarcasterActions'
-import { User } from '@/components/Home/User'
-import { WalletActions } from '@/components/Home/WalletActions'
-import { NotificationActions } from './NotificationActions'
+"use client";
+import { FarcasterActions } from "@/components/Home/FarcasterActions";
+import { User } from "@/components/Home/User";
+import { WalletActions } from "@/components/Home/WalletActions";
+import { NotificationActions } from "./NotificationActions";
 
 export function Demo() {
   // Example meme image URL - you can replace this with dynamic data
-  const memeImageUrl = "https://based-meme.vercel.app/image.png"
+  const memeImageUrl = "https://based-meme.vercel.app/image.png";
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-4 space-y-8">
@@ -20,5 +20,5 @@ export function Demo() {
         <WalletActions />
       </div>
     </div>
-  )
+  );
 }
