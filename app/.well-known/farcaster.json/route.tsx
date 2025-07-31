@@ -8,7 +8,7 @@ export async function GET() {
       version: "1",
       name: "Based Meme", // Updated from "Based Memes" for consistency
       iconUrl: "https://based-meme.vercel.app/favicon.ico",
-      homeUrl: "https://based-meme.vercel.app/opengraph-image.png",
+      homeUrl: "https://based-meme.vercel.app/",
       imageUrl: "https://based-meme.vercel.app/opengraph-image.png",
       buttonTitle: "👀 Explore Memes",
       splashImageUrl: "https://based-meme.vercel.app/opengraph-image.png",
