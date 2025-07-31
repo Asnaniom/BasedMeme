@@ -1,5 +1,5 @@
 {
-  "frame": {
+  "miniapp": {
     "name": "Based Memes",
     "tags": ["meme", "memes"],
     "homeUrl": "https://based-meme.vercel.app",

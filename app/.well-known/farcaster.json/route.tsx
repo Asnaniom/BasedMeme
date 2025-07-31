@@ -1,9 +1,10 @@
 // app/.well-known/farcaster.json/route.tsx
+import { miniAppHost } from "@farcaster/miniapp-sdk";
 import { NextResponse } from "next/server";
 
 export async function GET() {
   const body = {
-    frame: {
+    miniapp: {
       version: "1",
       name: "Based Meme", // Updated from "Based Memes" for consistency
       iconUrl: "https://based-meme.vercel.app/favicon.ico",
