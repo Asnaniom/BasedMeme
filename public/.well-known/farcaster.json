@@ -1,23 +1,17 @@
 {
-  "miniapp": {
-    "version": "1",
-    "name": "Based Meme",
-    "iconUrl": "https://based-meme.vercel.app/favicon.ico",
+  "frame": {
+    "name": "Based Memes",
+    "tags": ["meme", "memes"],
     "homeUrl": "https://based-meme.vercel.app",
-    "imageUrl": "https://based-meme.vercel.app/opengraph-image.png",
-    "buttonTitle": "👀 Explore Memes",
-    "splashImageUrl": "https://based-meme.vercel.app/opengraph-image.png",
-    "splashBackgroundColor": "#6200EA",
-    "description": "Create, remix & share memes powered by Farcaster and Base",
-    "subtitle": "The ultimate meme playground on Base",
-    "screenshotUrls": ["https://based-meme.vercel.app/opengraph-image.png"],
+    "iconUrl": "https://based-meme.vercel.app/icon.png",
+    "version": "1",
+    "imageUrl": "https://based-meme.vercel.app/image.png",
+    "subtitle": "One More Reason To Be Based",
+    "webhookUrl": "https://based-meme.vercel.app/api/webhook",
+    "description": "Have Fun On Farcaster",
+    "splashImageUrl": "https://based-meme.vercel.app/splash.png",
     "primaryCategory": "social",
-    "tags": ["meme", "memes", "fun", "onchain", "base"],
-    "heroImageUrl": "https://based-meme.vercel.app/opengraph-image.png",
-    "tagline": "The ultimate meme playground on Base",
-    "ogTitle": "Based Meme - Meme Playground",
-    "ogDescription": "Create, remix & share memes powered by Farcaster and Base",
-    "ogImageUrl": "https://based-meme.vercel.app/opengraph-image.png"
+    "splashBackgroundColor": "#6200EA"
   },
   "accountAssociation": {
     "header": "",
