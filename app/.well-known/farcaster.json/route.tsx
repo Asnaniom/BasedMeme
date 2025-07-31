@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const body = {
-    miniapp: {
+    frame: {
       version: "1",
       name: "Based Meme", // Updated from "Based Memes" for consistency
       iconUrl: "https://based-meme.vercel.app/favicon.ico",
