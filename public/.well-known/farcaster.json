@@ -13,7 +13,7 @@
     "webhookUrl": "https://based-meme.vercel.app/api/webhook",
     "subtitle": "Create and share based memes",
     "description": "A decentralized meme creation and sharing platform built on Base. Create, mint, and share your most based memes with the community.",
-    "primaryCategory": "entertainment",
+    "primaryCategory": "social",
     "heroImageUrl": "https://based-meme.vercel.app/generated-image.png",
     "castShareUrl": "https://based-meme.vercel.app/generated-image.png"
   },
