@@ -5,13 +5,17 @@
     "homeUrl": "https://based-meme.vercel.app/",
     "iconUrl": "https://based-meme.vercel.app/generated-image.png",
     "version": "1",
-    "imageUrl": "https://based-meme.vercel.app/opengraph-image.png",
-    "subtitle": "One More Reason To Be Based",
-    "webhookUrl": "https://based-meme.vercel.app/api/webhook",
-    "description": "Have Fun On Farcaster",
+    "iconUrl": "https://based-meme.vercel.app/icon.png",
+    "homeUrl": "https://based-meme.vercel.app",
+    "imageUrl": "https://based-meme.vercel.app/generated-image.png",
     "splashImageUrl": "https://based-meme.vercel.app/opengraph-image.png",
-    "primaryCategory": "social",
-    "splashBackgroundColor": "#6200EA"
+    "splashBackgroundColor": "#FF6B35",
+    "webhookUrl": "https://based-meme.vercel.app/api/webhook",
+    "subtitle": "Create and share based memes",
+    "description": "A decentralized meme creation and sharing platform built on Base. Create, mint, and share your most based memes with the community.",
+    "primaryCategory": "entertainment",
+    "heroImageUrl": "https://based-meme.vercel.app/generated-image.png",
+    "castShareUrl": "https://based-meme.vercel.app/generated-image.png"
   },
   "accountAssociation": {
     "header": "eyJmaWQiOjI3NzA1MSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDhjNzU4NjllYzZBN0ZCZkQ1NUY4NTFENEU0YTUwQTA0MDdhNDVhMkMifQ",
