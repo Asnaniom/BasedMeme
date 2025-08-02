@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { sdk } from "@farcaster/miniapp-sdk";
 
 // Farcaster brand purple
 const PRIMARY = "#8A63D2";
@@ -44,9 +45,20 @@ export default function BasedMemes() {
 
   useEffect(() => {
     setHydrated(true);
+    console.log("Hydrated! About to call sdk.actions.ready()");
+    if (sdk?.actions?.ready) {
+      sdk.actions.ready();
+      console.log("Called sdk.actions.ready()");
+    } else {
+      console.warn("sdk.actions.ready is not defined - running outside Mini App?");
+    }
+    // Optionally log context (be careful: do not log private data in production)
+    console.log("SDK context:", sdk.context);
+    fetchMeme();
   }, []);
 
   const fetchMeme = async (chosenMood: string = mood) => {
+    console.log("Fetching meme for mood:", chosenMood);
     setLoading(true);
     setError("");
     setMeme(null);
@@ -56,9 +68,12 @@ export default function BasedMemes() {
     try {
       const response = await fetch(url);
       if (!response.ok) throw new Error("Could not fetch memes.");
-      setMeme(await response.json());
-    } catch {
-      setError("Failed to load meme. Please try again.");
+      const memeData = await response.json();
+      setMeme(memeData);
+      console.log("Fetched meme:", memeData);
+    } catch (err: any) {
+      setError(err.message || "Unknown error");
+      console.error("Error fetching meme:", err);
     }
     setLoading(false);
   };
