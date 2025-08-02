@@ -1,24 +1,39 @@
 import "./globals.css";
+import { ReactNode } from "react";
 
-const OG_IMAGE = "https://based-meme.vercel.app/opengraph-image.png";
+export const metadata = {
+  title: "Based Meme",
+  description: "Create, remix and share memes on Farcaster",
+  openGraph: {
+    title: 'Based Meme',
+    description: 'Create, remix and share memes on Farcaster',
+    url: 'https://based-meme.vercel.app/',
+    siteName: 'Based Meme',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: "Based Meme Preview",
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Based Meme",
+    description: "Create, remix and share memes on Farcaster",
+    images: ["/opengraph-image.png"],
+  },
+  icons: {
+    icon: "/generated-image.png",
+  },
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:image" content={OG_IMAGE} />
-        <meta name="twitter:image" content={OG_IMAGE} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <title>Based Meme</title>
-        <meta
-          name="description"
-          content="Create, remix and share memes on Farcaster"
-        />
-      </head>
       <body
         style={{
           width: "100vw",
@@ -26,8 +41,7 @@ export default function RootLayout({
           margin: 0,
           padding: 0,
           boxSizing: "border-box",
-          background: "#6200EA", // Background purple
-          // Enable normal scrolling
+          background: "#6200EA",
           overflow: "auto",
           minHeight: "100vh",
         }}
@@ -39,10 +53,9 @@ export default function RootLayout({
             minHeight: "100vh",
             minWidth: "100vw",
             boxSizing: "border-box",
-            border: "8px solid #6200EA", // <-- THE BORDER (adjust width here)
-            borderRadius: "18px", // <-- optional: for rounded corners (adjust as needed)
-            background: "#fff", // Or your inner background color
-            // overflow removed here!
+            border: "8px solid #6200EA",
+            borderRadius: "18px",
+            background: "#fff",
             display: "flex",
             flexDirection: "column",
             justifyContent: "stretch",
