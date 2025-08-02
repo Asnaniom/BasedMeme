@@ -6,7 +6,7 @@ export async function GET() {
   const body = {
     frame: {
       version: "1",
-      name: "Based Meme", // Updated from "Based Memes" for consistency
+      name: "Based Memes", // Updated from "Based Memes" for consistency
       iconUrl: "https://based-meme.vercel.app/favicon.ico",
       homeUrl: "https://based-meme.vercel.app/",
       imageUrl: "https://based-meme.vercel.app/opengraph-image.png",
